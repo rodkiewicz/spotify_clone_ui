@@ -7,10 +7,10 @@ List<String> podcasts = [
      "podcasts 4",
 ];
 List<String> podcastsAuthors = [
-  "Autor 1",
-  "Autor 2",
-  "Autor 3",
-  "Autor 4",
+  "Author 1",
+  "Author 2",
+  "Author 3",
+  "Author 4",
 ];
 List<String> podcastsLinks = [
   "https://images.unsplash.com/photo-1581446825137-f07a81380ead?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",

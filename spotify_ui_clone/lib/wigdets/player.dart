@@ -9,7 +9,7 @@ class Player extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height * 0.09,
-      color: Colors.white10,
+      color: Color.fromARGB(255, 26, 26, 26),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -30,7 +30,7 @@ class Player extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        "Podcast 1 - Title",
+                        "Podcast 1 - Title · Author ",
                         style: TextStyle(
                           fontSize: 13.0,
                           fontWeight: FontWeight.w500,
