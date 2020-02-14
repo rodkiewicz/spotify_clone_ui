@@ -7,3 +7,4 @@ Spotify UI clone made in 5 hours.
 
 ### To-do:
 - [ ] make app responsive
+- [ ] add custom scroll view to library view
