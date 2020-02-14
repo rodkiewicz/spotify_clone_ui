@@ -12,7 +12,7 @@ class MusicTab extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(80.0),
+          preferredSize: Size.fromHeight(32.0),
           child: AppBar(
             backgroundColor: Colors.black,
             flexibleSpace: new Column(

@@ -6,7 +6,11 @@ List<String> albums = [
   "100 dni do matury",
   "Wszystkie drogi prowadzą do dymu",
   "CRUD",
-  "Chillerex i utopix"
+  "Chillerex i utopix",
+  "Chillerex i utoapix",
+  "Chillerex i utoapix3",
+  "Chillerex i utoapixq",
+  "Chillerex i utopaix2",
 ];
 List<String> albumsDesc = [
   "",
@@ -14,6 +18,10 @@ List<String> albumsDesc = [
   "by Jan Pierwszy",
   "by Krzysztof Drugi",
   "by Maciej Trzeci",
+  "by Piotrek Czwarty",
+  "by Piotrek Czwarty",
+  "by Piotrek Czwarty",
+  "by Piotrek Czwarty",
   "by Piotrek Czwarty",
 ];
 List<String> albumsLinks = [
@@ -23,12 +31,18 @@ List<String> albumsLinks = [
   "https://images.unsplash.com/photo-1579714996298-5f25255e98a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
   "https://images.unsplash.com/photo-1579765955778-3c78ba1d9481?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2645&q=80",
   "https://images.unsplash.com/photo-1581700575845-b1ecdfb21117?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=2000&q=80",
+  "https://images.unsplash.com/photo-1581700575845-b1ecdfb21117?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=2000&q=80",
+  "https://images.unsplash.com/photo-1581700575845-b1ecdfb21117?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=2000&q=80",
+  "https://images.unsplash.com/photo-1581700575845-b1ecdfb21117?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=2000&q=80",
+  "https://images.unsplash.com/photo-1581700575845-b1ecdfb21117?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=2000&q=80",
 ];
 
 class PlaylistsList extends StatelessWidget {
   const PlaylistsList({
     Key key,
   }) : super(key: key);
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +51,7 @@ class PlaylistsList extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         ListView(
+            primary: false,
             shrinkWrap: true,
             scrollDirection: Axis.vertical,
             children: List.generate(albums.length, (ind) {
