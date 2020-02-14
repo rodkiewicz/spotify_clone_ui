@@ -34,9 +34,9 @@ class TopGenres extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
-            "Recently played",
+            "Your top genres",
             style: TextStyle(
-                fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                fontWeight: FontWeight.bold, color: Colors.white, fontSize: 15),
             textAlign: TextAlign.left,
           ),
         ),
@@ -94,7 +94,7 @@ class Genes extends StatelessWidget {
           ),
           decoration: BoxDecoration(
               color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0).withOpacity(0.8),
-              borderRadius: BorderRadius.circular(16.0)),
+              borderRadius: BorderRadius.circular(6.0)),
         ),
       ),
     );

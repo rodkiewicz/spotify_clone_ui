@@ -13,7 +13,7 @@ class Search extends StatelessWidget {
             begin: Alignment(-2.0, -1.2),
             end: FractionalOffset.bottomCenter,
             colors: [Colors.white, Colors.black],
-            stops: [0, 0.3],
+            stops: [0, 0.6],
           ),
         ),
         child: Column(
@@ -30,7 +30,7 @@ class Search extends StatelessWidget {
                 padding: const EdgeInsets.all(24.0),
                 child: Text(
                   "Search",
-                  style: TextStyle(fontSize: 30, color: Colors.white),
+                  style: TextStyle(fontSize: 50, color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -45,10 +45,11 @@ class Search extends StatelessWidget {
                     focusColor: Colors.white,
                     border: new OutlineInputBorder(
                       borderRadius: const BorderRadius.all(
-                        const Radius.circular(10.0),
+                        const Radius.circular(6.0),
                       ),
                     ),
                     fillColor: Colors.white,
+                    hintStyle: TextStyle(fontWeight: FontWeight.w600, color: Colors.grey[800]),
                     hintText: '🔍 Artists, songs, or podcats'),
               ),
             ),

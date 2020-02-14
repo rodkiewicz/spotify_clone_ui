@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 List<String> albums = [
-  "100 dni do deadlineu",
-  "Wszystkie drogi prowadzą do stackoverflow",
+  "100 dni do matury",
+  "Wszystkie drogi prowadzą do dymu",
   "CRUD",
   "Chillerex i utopix"
 ];

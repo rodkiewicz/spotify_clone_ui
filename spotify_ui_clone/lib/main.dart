@@ -63,7 +63,8 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
           color: Colors.black,
           // set the tab bar as the child of bottom navigation bar
           child: TabBar(
-
+            indicator: null,
+            indicatorColor: Colors.transparent,
             tabs: <Tab>[
               Tab(
                 // set icon to the tab
