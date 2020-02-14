@@ -1,4 +1,4 @@
-# spotify_ui_clone
+# Flutter Spotify UI clone
 Spotify UI clone done in 5 hours.
 
 ![](https://raw.githubusercontent.com/rodkiewicz/spotify_clone_ui/master/1_.png?token=ABJUXPRNC2KTTDLSBVTTQ5S6KA7IW)
