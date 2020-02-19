@@ -11,15 +11,16 @@ class MusicTab extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        appBar: PreferredSize(
+        backgroundColor: Color.fromARGB(0, 0, 0, 0),
+        appBar:  PreferredSize(
           preferredSize: Size.fromHeight(32.0),
           child: AppBar(
-            backgroundColor: Colors.black,
+            backgroundColor: Color.fromARGB(0, 0, 0, 0),
             flexibleSpace: new Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Align(
-                  alignment: Alignment.centerLeft,
+                  alignment: Alignment.bottomLeft,
                   child: Container(
                     child: Padding(
                       padding: const EdgeInsets.only(
@@ -31,7 +32,7 @@ class MusicTab extends StatelessWidget {
                             fontWeight: FontWeight.w500),
                         isScrollable: true,
                         labelPadding:
-                            EdgeInsets.only(left: 0.0, right: 0.0),
+                        EdgeInsets.only(left: 0.0, right: 0.0),
                         indicator: UnderlineTabIndicator(
                             borderSide: BorderSide(
                               width: 2,

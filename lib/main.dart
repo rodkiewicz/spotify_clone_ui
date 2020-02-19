@@ -11,9 +11,9 @@ void main() {
       title: "Spotify UI Clone",
       // Home
       home: MyHome()));
-      SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
-          statusBarBrightness: Brightness.dark, //ios
-        ));
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
+    statusBarBrightness: Brightness.light, //ios
+  ));
 }
 
 class MyHome extends StatefulWidget {
@@ -43,18 +43,25 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
- 
     return Scaffold(
         // Set the TabBar view as the body of the Scaffold
         body: Stack(
           children: <Widget>[
-            TabBarView(
-              // Add tabs as widgets
-              children: <Widget>[Home(), Search(), Library()],
-              // set the controller
-              controller: controller,
+            Padding(
+              padding: EdgeInsets.only(
+                bottom: MediaQuery.of(context).size.height * 0.09,
+              ),
+              child: TabBarView(
+                // Add tabs as widgets
+                children: <Widget>[Home(), Search(), Library()],
+                // set the controller
+                controller: controller,
+              ),
             ),
-            Align(child: Player(),alignment: Alignment.bottomCenter,)
+            Align(
+              child: Player(),
+              alignment: Alignment.bottomCenter,
+            )
           ],
         ),
         // Set the bottom navigation bar
@@ -86,6 +93,3 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
         ));
   }
 }
-
-
-
