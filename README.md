@@ -6,5 +6,5 @@ Spotify UI clone made in 5 hours.
 ![](https://raw.githubusercontent.com/rodkiewicz/spotify_clone_ui/master/3_.png?token=ABJUXPXHYBIVPOBYCS3BYLS6KA7KA)
 
 ### To-do:
-- [ ] make app responsive
-- [ ] add custom scroll view to library view
+- [x] make app responsive
+- [x] add custom scroll view to library view
