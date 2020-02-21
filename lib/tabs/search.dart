@@ -16,45 +16,47 @@ class Search extends StatelessWidget {
             stops: [0, 0.6],
           ),
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Stack(children: <Widget>[
-              SizedBox(
-                width: 100,
-                height: MediaQuery.of(context).size.height * 0.17,
-              ),
-            ]),
-            Container(
-              child: Padding(
-                padding: const EdgeInsets.all(24.0),
-                child: Text(
-                  "Search",
-                  style: TextStyle(fontSize: 50, color: Colors.white),
-                  textAlign: TextAlign.center,
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Stack(children: <Widget>[
+                SizedBox(
+                  width: 100,
+                  height: MediaQuery.of(context).size.height * 0.17,
+                ),
+              ]),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: Text(
+                    "Search",
+                    style: TextStyle(fontSize: 50, color: Colors.white),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField(
-                textAlign: TextAlign.center,
-                decoration: InputDecoration(
-                    contentPadding: EdgeInsets.all(14.0),
-                    filled: true,
-                    focusColor: Colors.white,
-                    border: new OutlineInputBorder(
-                      borderRadius: const BorderRadius.all(
-                        const Radius.circular(6.0),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  textAlign: TextAlign.center,
+                  decoration: InputDecoration(
+                      contentPadding: EdgeInsets.all(14.0),
+                      filled: true,
+                      focusColor: Colors.white,
+                      border: new OutlineInputBorder(
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(6.0),
+                        ),
                       ),
-                    ),
-                    fillColor: Colors.white,
-                    hintStyle: TextStyle(fontWeight: FontWeight.w600, color: Colors.grey[800]),
-                    hintText: '🔍 Artists, songs, or podcats'),
+                      fillColor: Colors.white,
+                      hintStyle: TextStyle(fontWeight: FontWeight.w600, color: Colors.grey[800]),
+                      hintText: '🔍 Artists, songs, or podcats'),
+                ),
               ),
-            ),
-            TopGenres(),
-          ],
+              TopGenres(),
+            ],
+          ),
         ),
       ),
     );
