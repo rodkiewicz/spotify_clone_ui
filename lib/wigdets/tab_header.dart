@@ -7,7 +7,6 @@ class TabHeader extends SliverPersistentHeaderDelegate {
     return LayoutBuilder(builder: (context, constraints) {
       double percentage =
           (minExtent - shrinkOffset)/10;
-      print(percentage);
       if(percentage > 1){
         percentage = 1;
       }

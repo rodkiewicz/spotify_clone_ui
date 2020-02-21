@@ -12,7 +12,7 @@ void main() {
       // Home
       home: MyHome()));
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
-    statusBarBrightness: Brightness.light, //ios
+    statusBarBrightness: Brightness.dark, //ios
   ));
 }
 

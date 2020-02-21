@@ -9,13 +9,13 @@ class Player extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.09,
+      height: MediaQuery.of(context).size.height * 0.10,
       color: Color.fromARGB(255, 26, 26, 26),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Image.network(
-            "https://images.unsplash.com/photo-1581446825137-f07a81380ead?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+            "https://images.unsplash.com/photo-1581446825137-f07a81380ead?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
             width: MediaQuery.of(context).size.height * 0.09,
             fit: BoxFit.fitWidth,
           ),
